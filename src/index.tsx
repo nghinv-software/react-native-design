@@ -18,7 +18,7 @@ import Row from './components/Row/Row';
 import SizeBox from './components/SizeBox';
 import Space from './components/Space';
 import Text from './components/Text';
-import ServiceProviderWithTheme from './ServiceProviderWithTheme';
+import ServiceProviderWithTheme from './components/ServiceProviderWithTheme';
 
 export {
   Avatar,

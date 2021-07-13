@@ -1,6 +1,6 @@
 {
   "name": "@nghinv/react-native-design",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "React Native design Library",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
