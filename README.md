@@ -11,7 +11,7 @@ React Native design Library
 [![PRs Welcome][prs-welcome-badge]][prs-welcome]
 
 <p align="center">
-<img src="./assets/demo.png" width="300"/>
+<img src="./assets/demo.gif" width="300"/>
 </p>
 
 ## Installation
