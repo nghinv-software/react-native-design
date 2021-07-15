@@ -20,6 +20,8 @@ import Space from './components/Space';
 import Text from './components/Text';
 import ServiceProviderWithTheme from './components/ServiceProviderWithTheme';
 
+export * from '@nghinv/react-native-theme';
+
 export {
   Avatar,
   Badge,

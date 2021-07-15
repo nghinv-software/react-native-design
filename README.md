@@ -35,6 +35,99 @@ npm install @nghinv/react-native-design
 
 ## Usage
 
+1. Wrapper `ThemeProvider` with `Root` Component
+
+```js
+import { 
+  ThemeProvider, 
+  DarkTheme, 
+  LightTheme, 
+  Colors, 
+  ThemeType,
+  ServiceProviderWithTheme,
+} from '@nghinv/react-native-design';
+
+const black: ThemeType = {
+  ...DarkTheme,
+  background: Colors.black,
+  drawerBackground: Colors.black,
+  card: 'rgba(255, 255, 255, 0.1)',
+  shadowColor: 'black',
+};
+
+const purple: ThemeType = {
+  ...LightTheme,
+  background: Colors.deepPurple800,
+};
+
+function App() {
+  return (
+    <ThemeProvider
+      themes={{
+        purple,
+        black,
+      }}
+      themeMode='dark'
+    >
+      <ServiceProviderWithTheme>
+        <RootComponent />
+      </ServiceProviderWithTheme>
+    </ThemeProvider>
+  );
+}
+```
+
+2. Use hook `useTheme`
+
+```js
+import React from 'react';
+import { View, Text, ScrollView } from 'react-native';
+import { useTheme, ThemeMode } from '@nghinv/react-native-design';
+
+function App() {
+  const { theme, themeMode, setThemeMode } = useTheme();
+
+  return (
+    <View 
+      style={[
+        styles.container, 
+        { backgroundColor: theme.drawerBackground }
+      ]}
+    >
+      <Text 
+        style={[
+          theme.textStyles.h0, 
+          { marginLeft: 16, marginBottom: 8 }
+        ]}
+      >
+      Set theme
+      </Text>
+      <ScrollView>
+        {
+          ['Default', 'Light', 'Dark', 'Black', 'Purple'].map(themeKey => (
+            <Row
+              key={themeKey}
+              title={`${themeKey} theme`}
+              containerStyle={{ 
+                marginBottom: 2, 
+                marginHorizontal: 16, 
+                borderRadius: 4 
+              }}
+              backgroundColor={themeMode === themeKey.toLowerCase() ? theme.selected : undefined}
+              onPress={() => {
+                setThemeMode(themeKey.toLowerCase() as ThemeMode)
+              }}
+            />
+          ))
+        }
+      </ScrollView>
+    </View>
+  );
+}
+```
+
+3. Use `Component`
+
 ```js
 import {
   Divider,
