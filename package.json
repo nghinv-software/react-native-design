@@ -1,6 +1,6 @@
 {
   "name": "@nghinv/react-native-design",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React Native design Library",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -41,9 +41,7 @@
   },
   "homepage": "https://github.com/nghinv-software/react-native-design#readme",
   "publishConfig": {
-    "access": "public",
-    "cache": "~/.npm",
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
@@ -69,19 +67,20 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "^0.64.2"
+    "react-native": "^0.64.2",
+    "react-native-gesture-handler": "*",
+    "react-native-reanimated": ">=2.0.0-rc.0",
+    "react-native-fast-image": "*"
   },
   "dependencies": {
     "react-fast-compare": "*",
-    "react-native-fast-image": "^8.3.4",
-    "react-native-gesture-handler": "*",
-    "react-native-reanimated": ">=2.0.0-rc.0",
-    "@nghinv/react-native-badge": "^0.0.1",
-    "@nghinv/react-native-search-bar": "^0.0.1",
-    "@nghinv/react-native-services": "^1.0.6",
-    "@nghinv/react-native-swipe-row": "^0.0.1",
-    "@nghinv/react-native-switch": "^0.0.1",
-    "@nghinv/react-native-theme": "^0.0.3"
+    "@nghinv/react-native-animated": "*",
+    "@nghinv/react-native-badge": "*",
+    "@nghinv/react-native-search-bar": "*",
+    "@nghinv/react-native-services": "*",
+    "@nghinv/react-native-swipe-row": "*",
+    "@nghinv/react-native-switch": "*",
+    "@nghinv/react-native-theme": "*"
   },
   "jest": {
     "preset": "react-native",

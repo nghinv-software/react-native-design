@@ -33,6 +33,12 @@ or
 npm install @nghinv/react-native-design
 ```
 
+- peerDependencies
+
+```sh
+yarn add react-native-gesture-handler react-native-reanimated react-native-fast-image react-native-fast-image 
+```
+
 ## Usage
 
 1. Wrapper `ThemeProvider` with `Root` Component
@@ -148,6 +154,11 @@ import {
   ServiceProviderWithTheme,
 } from '@nghinv/react-native-design';
 ```
+
+---
+## Credits
+
+- [@Nghi-NV](https://github.com/Nghi-NV)
 
 [version-badge]: https://img.shields.io/npm/v/@nghinv/react-native-design.svg?style=flat-square
 [package]: https://www.npmjs.com/package/@nghinv/react-native-design
