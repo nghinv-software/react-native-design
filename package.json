@@ -1,6 +1,6 @@
 {
   "name": "@nghinv/react-native-design",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React Native design Library",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -70,10 +70,7 @@
     "react-native": "^0.64.2",
     "react-native-gesture-handler": "*",
     "react-native-reanimated": ">=2.0.0-rc.0",
-    "react-native-fast-image": "*"
-  },
-  "dependencies": {
-    "react-fast-compare": "*",
+    "react-native-fast-image": "*",
     "@nghinv/react-native-animated": "*",
     "@nghinv/react-native-badge": "*",
     "@nghinv/react-native-search-bar": "*",
@@ -81,6 +78,9 @@
     "@nghinv/react-native-swipe-row": "*",
     "@nghinv/react-native-switch": "*",
     "@nghinv/react-native-theme": "*"
+  },
+  "dependencies": {
+    "react-fast-compare": "*"
   },
   "jest": {
     "preset": "react-native",

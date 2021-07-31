@@ -36,8 +36,10 @@ npm install @nghinv/react-native-design
 - peerDependencies
 
 ```sh
-yarn add react-native-gesture-handler react-native-reanimated react-native-fast-image react-native-fast-image 
+yarn add react-native-gesture-handler react-native-reanimated react-native-fast-image @nghinv/react-native-badge @nghinv/react-native-search-bar @nghinv/react-native-services @nghinv/react-native-swipe-row @nghinv/react-native-switch @nghinv/react-native-theme @nghinv/react-native-animated
 ```
+
+> IOS run `cd ios && pod install`
 
 ## Usage
 
