@@ -54,6 +54,7 @@ import {
   ThemeType,
   ServiceProviderWithTheme,
 } from '@nghinv/react-native-design';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const black: ThemeType = {
   ...DarkTheme,
@@ -70,17 +71,19 @@ const purple: ThemeType = {
 
 function App() {
   return (
-    <ThemeProvider
-      themes={{
-        purple,
-        black,
-      }}
-      themeMode='dark'
-    >
-      <ServiceProviderWithTheme>
-        <RootComponent />
-      </ServiceProviderWithTheme>
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ThemeProvider
+        themes={{
+          purple,
+          black,
+        }}
+        themeMode='dark'
+      >
+        <ServiceProviderWithTheme>
+          <RootComponent />
+        </ServiceProviderWithTheme>
+      </ThemeProvider>
+    </SafeAreaProvider>
   );
 }
 ```
