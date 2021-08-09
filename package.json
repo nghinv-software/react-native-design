@@ -1,6 +1,6 @@
 {
   "name": "@nghinv/react-native-design",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React Native design Library",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -61,6 +61,10 @@
     "prettier": "^2.0.5",
     "react": "16.13.1",
     "react-native": "0.64.2",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-reanimated": "^2.2.0",
+    "react-native-safe-area-context": "3.3.0",
+    "react-native-fast-image": "^8.3.4",
     "react-native-builder-bob": "^0.18.0",
     "release-it": "^14.10.0",
     "typescript": "^4.0.8"
@@ -68,18 +72,18 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "^0.64.2",
-    "react-native-gesture-handler": "*",
-    "react-native-reanimated": ">=2.0.0-rc.0",
     "react-native-fast-image": "*",
-    "@nghinv/react-native-animated": "*",
-    "@nghinv/react-native-badge": "*",
-    "@nghinv/react-native-search-bar": "*",
-    "@nghinv/react-native-services": "*",
-    "@nghinv/react-native-swipe-row": "*",
-    "@nghinv/react-native-switch": "*",
-    "@nghinv/react-native-theme": "*"
+    "react-native-gesture-handler": "*",
+    "react-native-reanimated": ">=2.0.0-rc.0"
   },
   "dependencies": {
+    "@nghinv/react-native-services": "^1.1.0",
+    "@nghinv/react-native-animated": "^0.2.0",
+    "@nghinv/react-native-badge": "^0.0.2",
+    "@nghinv/react-native-search-bar": "^0.1.0",
+    "@nghinv/react-native-swipe-row": "^0.1.0",
+    "@nghinv/react-native-switch": "^0.1.0",
+    "@nghinv/react-native-theme": "^0.0.4",
     "react-fast-compare": "*"
   },
   "jest": {
